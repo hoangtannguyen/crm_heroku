@@ -62,7 +62,7 @@
                             <td>{{ isset($items->equipments->title) ? $items->equipments->title :'' }}</td>
                             <td>{{ $items->provider }}</td>
                             <td>{{ $items->time }}</td>
-                            <td style="max-width: 50px" >{!! $items->content !!}</td>
+                            <td style="max-width: 50px">{!! $items->content !!}</td>
                             <td class="text-center">
                                  <a class="text-dark ml-1 mr-1 accre-modal-update" data-content="{{ $items->content }}" data-provider="{{ $items->provider }}" data-title="{{ isset($items->equipments->title) ? $items->equipments->title :'' }}" data-href="{{ route('accre.put',$items->id) }}" title="{{ __('Cập nhật lịch sử kiểm định') }}"><i class="fas fa-edit"></i></a>
                                  <a class="btn btn-danger btn-sm" title="Xóa thiết bị" href="{{ route('accre.delete',$items->id)  }}" data-toggle="modal" data-target="#sideModal" data-direct="modal-top-right"><i class="fas fa-trash"></i></a>
